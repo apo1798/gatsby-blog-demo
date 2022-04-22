@@ -1,0 +1,11 @@
+.screen-nav > ul {
+  display: flex;
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+@media (max-width: 45em) {
+  .screen-nav {
+    display: none;
+  }
+}

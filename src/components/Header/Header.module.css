@@ -1,0 +1,25 @@
+.header {
+  height: 4rem;
+  background: linear-gradient(to top right, rgb(33, 33, 33), rgb(7, 13, 22));
+  margin-bottom: 2rem;
+  color: white;
+  position: relative;
+
+  /* padding: 0 2.5rem; */
+}
+
+.header-container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.site-title {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}

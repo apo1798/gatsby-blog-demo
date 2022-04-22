@@ -1,0 +1,69 @@
+.markdown-wrapper {
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+
+.markdown-wrapper h4,
+.markdown-wrapper h5,
+.markdown-wrapper h6 {
+  margin: 0.6rem 0;
+}
+
+.markdown-wrapper h1 {
+  font-size: 2.4rem;
+  margin: 1.6rem 0;
+}
+
+.markdown-wrapper h2 {
+  font-size: 2.2rem;
+  margin: 1.4rem 0;
+}
+
+.markdown-wrapper h3 {
+  font-size: 2rem;
+  margin: 1.4rem 0;
+}
+
+.markdown-wrapper h4 {
+  font-size: 1.8rem;
+}
+
+.markdown-wrapper h5 {
+  font-size: 1.6rem;
+}
+
+.markdown-wrapper h6 {
+  font-size: 1.3rem;
+}
+
+.markdown-wrapper p {
+  margin-bottom: 1.2rem;
+}
+
+.markdown-wrapper a {
+  text-decoration: underline;
+}
+
+.markdown-wrapper ul,
+.markdown-wrapper ol {
+  margin: 0.8rem 0;
+  padding: 0 1.6rem 0 1.6rem;
+}
+
+.markdown-wrapper blockquote {
+  border-left: 5px solid black;
+  padding: 0.5rem 0.5rem 0 2rem;
+  background-color: #eee;
+}
+
+.markdown-wrapper pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.6rem 1.2rem;
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  line-height: 1.5;
+  tab-size: 4;
+  margin: 1.6rem 0;
+}

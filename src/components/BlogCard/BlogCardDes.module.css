@@ -1,0 +1,12 @@
+.align-center {
+  display: flex;
+  align-items: center;
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+
+  flex-wrap: wrap;
+}
+
+.align-right {
+  justify-content: flex-end;
+}

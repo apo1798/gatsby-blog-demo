@@ -1,0 +1,41 @@
+.tag-container {
+  margin-bottom: 2rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #efefef;
+  border-radius: 10px;
+  transform: translateX(0);
+  box-shadow: 0.1rem 0.1rem 0.7rem rgba(0, 0, 0, 0.35);
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space-small {
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+}
+
+.tag-links {
+  padding-left: 1.2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.tag-link h4 {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 45em) {
+  .tag-links {
+    grid-template-columns: 1fr;
+  }
+
+  .tag-link h4 {
+    font-size: 1rem;
+  }
+}

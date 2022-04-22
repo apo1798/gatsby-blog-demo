@@ -1,0 +1,47 @@
+.page-pagination {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.page-pagination a:link,
+.page-pagination a:visited {
+  border: 2px solid rgb(64, 107, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transform: translateZ(0);
+
+  display: flex;
+  align-items: center;
+
+  transition: all 0.3s;
+
+  flex-basis: 16rem;
+  flex-grow: 1;
+}
+
+.page-pagination div {
+  flex-basis: 16rem;
+  flex-grow: 1;
+}
+
+.page-pagination a:hover,
+.page-pagination a:active {
+  background-color: rgb(64, 107, 0);
+  color: white;
+}
+
+.page-pagination a:nth-child(1) {
+  text-align: left;
+}
+
+.page-pagination a:nth-child(2) {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.page-pagination a svg {
+  flex-shrink: 0;
+}

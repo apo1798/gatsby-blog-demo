@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+  font-family: "Noto Sans HK";
+  padding: 0 4rem;
+}
+
+.heading {
+  color: gold;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 63em) {
+  .container {
+    padding: 0 1.2rem;
+  }
+}

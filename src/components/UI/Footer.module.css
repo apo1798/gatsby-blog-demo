@@ -1,0 +1,26 @@
+.footer {
+  height: 4rem;
+  border-top: 1px solid rgb(121, 121, 121);
+  margin-top: 1rem;
+
+  background: linear-gradient(to bottom left, #212121, rgb(7, 13, 22));
+}
+
+.footer-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.footer-navbar {
+  display: flex;
+  grid-gap: 1rem;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+}

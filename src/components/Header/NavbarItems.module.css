@@ -1,0 +1,13 @@
+.nav-links {
+  list-style: none;
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+  color: #ccc;
+  transition: all 0.2s;
+}
+.nav-links a:hover,
+.nav-links a:active {
+  color: #fff;
+}

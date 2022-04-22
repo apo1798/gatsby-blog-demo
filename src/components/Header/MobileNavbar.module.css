@@ -1,0 +1,33 @@
+.mobile-nav {
+  display: none;
+  z-index: 9999;
+}
+
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav ul li {
+  margin: 0.6rem 0 0.6rem 2.4rem;
+}
+
+.mobile-nav-links {
+  position: absolute;
+  width: 100vw;
+  height: 8rem;
+  top: 4rem;
+  left: 0;
+  background: linear-gradient(to top right, rgb(45, 45, 45), rgb(43, 48, 56));
+  border-bottom: 2px solid rgb(185, 185, 185);
+}
+
+.mobile-nav-icon {
+  cursor: pointer;
+}
+
+@media (max-width: 45rem) {
+  .mobile-nav {
+    display: block;
+  }
+}
