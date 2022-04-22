@@ -15,7 +15,8 @@
 .mobile-nav-links {
   position: absolute;
   width: 100vw;
-  height: 8rem;
+  padding-top: 0.5rem;
+  height: 12rem;
   top: 4rem;
   left: 0;
   background: linear-gradient(to top right, rgb(45, 45, 45), rgb(43, 48, 56));
@@ -28,6 +29,6 @@
 
 @media (max-width: 45rem) {
   .mobile-nav {
-    display: block;
+    display: flex;
   }
 }

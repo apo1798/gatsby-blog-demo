@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `宏量的部落格`,
-    titleTemplate: "%s | 宏量的部落格",
-    description: `這裡分享我的日常生活、財商、會計知識。`,
+    title: `DC的生活日誌`,
+    titleTemplate: "%s | DC的生活日誌",
+    description: `這裡分享個人成長、投資開戶、讀書心得、生活優惠的介紹。`,
     author: `chenliam0`,
     siteUrl: `https://chenliamblog.netlify.app/`,
+    keywords: `投資理財、個人成長、讀書心得`,
     image: `/dog.jpg`,
     lang: `zh-TW`,
   },
@@ -18,13 +19,13 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `site`,
-    //     path: `${__dirname}/site`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `site`,
+        path: `${__dirname}/site`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-remark-images`,
@@ -37,6 +38,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000,
+              backgroundColor: "transparent",
             },
           },
         ],
@@ -52,11 +54,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `宏量的部落格`,
-        short_name: `Liam's Blog`,
+        name: `DC 的生活日誌`,
+        short_name: `Danny's Blog`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#000`,
+        theme_color: `#333`,
         display: `standalone`,
         icon: `src/images/icon.png`,
       },

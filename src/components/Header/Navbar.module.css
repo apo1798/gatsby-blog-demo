@@ -1,7 +1,13 @@
-.screen-nav > ul {
+.screen-nav ul {
   display: flex;
   grid-gap: 2rem;
   gap: 2rem;
+
+  align-items: center;
+}
+
+.screen-nav ul a {
+  display: flex;
 }
 
 @media (max-width: 45em) {

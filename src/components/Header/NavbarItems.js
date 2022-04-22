@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { navLinks } from "./NavbarItems.module.css"
+import { LinkedinLogo } from "phosphor-react"
 
 const NavbarItems = props => {
   const data = useStaticQuery(graphql`
@@ -28,14 +29,26 @@ const NavbarItems = props => {
         </Link>
       </li>
       <li>
-        <Link to="/about" onClick={mobileMenuClosed}>
-          關於
+        <Link to="/tag" onClick={mobileMenuClosed}>
+          分類
         </Link>
-      </li>{" "}
+      </li>
       <li>
-        <Link to="/contact" onClick={mobileMenuClosed}>
-          聯絡
+        <Link to="/about" onClick={mobileMenuClosed}>
+          關於我
         </Link>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/danny-hong-liang-chen/
+"
+          title="linkedin"
+          rel="noopener noreferrer"
+          target="_blank"
+          onClick={mobileMenuClosed}
+        >
+          <LinkedinLogo size={32} />
+        </a>
       </li>
     </ul>
   )

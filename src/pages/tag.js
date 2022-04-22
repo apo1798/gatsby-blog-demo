@@ -3,10 +3,10 @@ import Layout from "../components/Layout"
 
 // import { graphql } from "gatsby"
 
-const ContactPage = ({ data }) => {
+const TagPage = ({ data }) => {
   return <Layout pageTitle="關於本站"></Layout>
 }
 
 // export const query = graphql``
 
-export default ContactPage
+export default TagPage

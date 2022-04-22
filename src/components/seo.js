@@ -18,6 +18,7 @@ const Seo = ({ description, meta, title, image, article }) => {
             defaultImage: image
             titleTemplate
             lang
+            keywords
           }
         }
       }
@@ -31,6 +32,7 @@ const Seo = ({ description, meta, title, image, article }) => {
     siteUrl,
     defaultImage,
     lang,
+    keywords,
   } = site.siteMetadata
 
   const seo = {
@@ -54,6 +56,8 @@ const Seo = ({ description, meta, title, image, article }) => {
       <meta name="description" content={seo.description} />
 
       <meta name="image" content={seo.image} />
+
+      <meta name="keywords" content={keywords} />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
 
