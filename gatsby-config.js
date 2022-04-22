@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "%s | 宏量的部落格",
     description: `這裡分享我的日常生活、財商、會計知識。`,
     author: `chenliam0`,
-    siteUrl: `https://voluble-madeleine-6234fe.netlify.app/`,
+    siteUrl: `https://chenliamblog.netlify.app/`,
     image: `/dog.jpg`,
     lang: `zh-TW`,
   },
