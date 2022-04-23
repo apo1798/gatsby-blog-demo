@@ -1,10 +1,21 @@
 .tag-container {
   margin-bottom: 2rem;
   padding: 0.8rem 1.2rem;
-  background-color: #efefef;
+  color: #eee;
+  background: linear-gradient(to bottom, #555, #333);
   border-radius: 10px;
   transform: translateX(0);
-  box-shadow: 0.1rem 0.1rem 0.7rem rgba(0, 0, 0, 0.35);
+}
+
+.tag-container a:link,
+.tag-container a:visited {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: all 0.3s ease-out;
+}
+.tag-container a:hover,
+.tag-container a:active {
+  color: #339af0;
 }
 
 .align-center {
