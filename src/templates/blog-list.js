@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import { graphql } from "gatsby"
 
 import { postListContainer } from "./blog-list.module.css"
@@ -55,7 +55,7 @@ export const query = graphql`
         }
         id
         slug
-        excerpt(pruneLength: 170, truncate: true)
+        excerpt(pruneLength: 120, truncate: true)
       }
     }
   }

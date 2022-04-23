@@ -1,18 +1,37 @@
-import React from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import BlogCardDes from "./BlogCardDes"
 
 //prettier-ignore
-import { postContainer, contentContainer, postImage,postText, alignCenter, alignRight } from "./BlogCard.module.css"
+import { postContainer, hideContainer, contentContainer, postImage,postText, alignCenter, alignRight } from "./BlogCard.module.css"
 import { Notebook } from "phosphor-react"
 
-const BlogCard = ({ node, extraTitle = "", isfirst }) => {
-  if (!node) return null
+const BlogCard = ({ node }) => {
+  // if (!node) return null;
+  const [elementIsViviable, setElemenIsVisible] = useState(false)
+  const postRef = useRef()
   const image = getImage(node.frontmatter.hero_image?.childImageSharp)
 
+  useEffect(() => {
+    const obeserver = new IntersectionObserver(entries => {
+      const entry = entries[0]
+      console.log("entry", entry.isIntersecting)
+
+      if (entry.isIntersecting === true) {
+        obeserver.unobserve(postRef.current)
+        setElemenIsVisible(true)
+      }
+    })
+    obeserver.observe(postRef.current)
+  }, [])
+
   return (
-    <article key={node.id} className={postContainer}>
+    <article
+      key={node.id}
+      className={`${postContainer} ${!elementIsViviable && hideContainer}`}
+      ref={postRef}
+    >
       <div className={contentContainer}>
         {image && (
           <GatsbyImage
@@ -23,9 +42,7 @@ const BlogCard = ({ node, extraTitle = "", isfirst }) => {
           />
         )}
         <div className={postText}>
-          <h2>
-            {extraTitle} {node.frontmatter.title}
-          </h2>
+          <h2>{node.frontmatter.title}</h2>
           <BlogCardDes
             date={node.frontmatter.date}
             tagArray={node.frontmatter.tag}

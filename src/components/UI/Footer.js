@@ -26,6 +26,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={footerItems}
+            title="instagram"
           >
             <InstagramLogo size={32} />
             {/* <span>Instagram</span> */}

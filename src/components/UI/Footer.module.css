@@ -18,10 +18,10 @@
 
 .footer-navbar {
   display: flex;
-  grid-gap: 1rem;
 }
 
 .footer-items {
   display: flex;
   align-items: center;
+  margin-left: 1.5rem;
 }

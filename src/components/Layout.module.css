@@ -1,8 +1,14 @@
-.container {
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
   margin: 0 auto;
   max-width: 1180px;
-  font-family: "Noto Sans HK";
   padding: 0 4rem;
+  flex-grow: 1;
 }
 
 .heading {
