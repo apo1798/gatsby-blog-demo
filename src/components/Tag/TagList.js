@@ -16,7 +16,7 @@ const TagList = ({ tagArray, nodes }) => {
           return (
             <li key={tag}>
               <Tag size={32} />
-              <Link to={`/${tag}`}>{tag}&nbsp;</Link> ({tagPostNum})
+              <Link to={`/tag/${tag}`}>{tag}&nbsp;</Link> ({tagPostNum})
             </li>
           )
         })}
