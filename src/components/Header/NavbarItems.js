@@ -1,40 +1,41 @@
 import React from "react"
 import { Link } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
-
-import { navLinks } from "./NavbarItems.module.css"
+import { navLinks, navLink, active } from "./NavbarItems.module.css"
 import { LinkedinLogo } from "phosphor-react"
 
 const NavbarItems = props => {
-  const data = useStaticQuery(graphql`
-    query NavQuery {
-      sitePage {
-        path
-      }
-    }
-  `)
-
-  console.log(data)
-
   const mobileMenuClosed = () => {
     if (!props.isMobile) return
     props.closeMenu()
   }
 
+  const path = window.location.pathname
+  const linkPathActive = currentPath => {
+    return path === currentPath ? `${navLink} ${active}` : `${navLink}`
+  }
+
   return (
     <ul className={navLinks}>
       <li>
-        <Link to="/" onClick={mobileMenuClosed}>
+        <Link to="/" onClick={mobileMenuClosed} className={linkPathActive("/")}>
           首頁
         </Link>
       </li>
       <li>
-        <Link to="/tag" onClick={mobileMenuClosed}>
+        <Link
+          to="/tag"
+          onClick={mobileMenuClosed}
+          className={linkPathActive("/tag")}
+        >
           分類
         </Link>
       </li>
       <li>
-        <Link to="/about" onClick={mobileMenuClosed}>
+        <Link
+          to="/about"
+          onClick={mobileMenuClosed}
+          className={linkPathActive("/about")}
+        >
           關於我
         </Link>
       </li>

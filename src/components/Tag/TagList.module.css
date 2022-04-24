@@ -1,0 +1,16 @@
+.tag-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-self: stretch;
+}
+
+.tag-container li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tag-container li svg {
+  margin-right: 1rem;
+}

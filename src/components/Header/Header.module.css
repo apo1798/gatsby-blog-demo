@@ -1,7 +1,6 @@
 .header {
   height: 4rem;
   background: linear-gradient(to top right, rgb(33, 33, 33), rgb(7, 13, 22));
-  margin-bottom: 2rem;
   color: white;
   position: relative;
 
@@ -19,7 +18,13 @@
 }
 
 .site-title {
-  font-family: "Noto Sans HK", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
+}
+
+@media (max-width: 45em) {
+  .header-container {
+    padding: 0 1rem;
+  }
 }

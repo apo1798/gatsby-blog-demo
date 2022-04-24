@@ -6,8 +6,9 @@ import MarkdownWrapper from "../components/UI/MarkdownWrapper"
 
 import { graphql } from "gatsby"
 
-const AboutPage = ({ data }) => {
-  console.log(data)
+const AboutPage = ({ data, ...props }) => {
+  console.log(props)
+
   return (
     <Layout pageTitle="關於我">
       <MarkdownWrapper>

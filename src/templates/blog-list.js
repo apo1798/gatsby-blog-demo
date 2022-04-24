@@ -18,18 +18,20 @@ const BlogList = props => {
   const nextPage = !isLast && `/blog/${(currentPage + 1).toString()}`
 
   return (
-    <Layout pageTitle={"文章列表"}>
-      <div className={postListContainer}>
-        {data.allMdx.nodes.map((node, index) => (
-          <BlogCard node={node} key={node.id} isfirst={index === 0} />
-        ))}
-      </div>
+    <>
+      <Layout pageTitle={"文章列表"} headerHero={true}>
+        <div className={postListContainer}>
+          {data.allMdx.nodes.map((node, index) => (
+            <BlogCard node={node} key={node.id} isfirst={index === 0} />
+          ))}
+        </div>
 
-      <PagePagination
-        prev={{ content: "上一頁", link: prevPage }}
-        next={{ content: "下一頁", link: nextPage }}
-      />
-    </Layout>
+        <PagePagination
+          prev={{ content: "上一頁", link: prevPage }}
+          next={{ content: "下一頁", link: nextPage }}
+        />
+      </Layout>{" "}
+    </>
   )
 }
 

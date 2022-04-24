@@ -6,17 +6,15 @@ import "./global.css"
 import Footer from "./UI/Footer"
 import Header from "./Header/Header"
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, headerHero = false }) => {
   return (
     <div className={pageContainer}>
       <Seo title={pageTitle} />
-      <Header />
+      <Header headerHero={headerHero} />
 
-      <div className={contentContainer}>
-        <main>
-          <h1 className={heading}>{pageTitle || "未設定Title"}</h1> {children}
-        </main>
-      </div>
+      <main className={contentContainer}>
+        <h1 className={heading}>{pageTitle || "未設定Title"}</h1> {children}
+      </main>
 
       <Footer />
     </div>

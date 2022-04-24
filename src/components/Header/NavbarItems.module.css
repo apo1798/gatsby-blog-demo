@@ -2,12 +2,33 @@
   list-style: none;
 }
 
-.nav-links a:link,
-.nav-links a:visited {
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
   color: #ccc;
   transition: all 0.2s;
+  position: relative;
 }
-.nav-links a:hover,
-.nav-links a:active {
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active {
   color: #fff;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5%;
+  left: 0;
+  background-color: #fff;
+  transform-origin: left;
+  transition: all 0.2s ease-in-out;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
 }

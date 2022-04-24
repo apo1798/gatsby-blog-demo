@@ -1,7 +1,10 @@
 .post-container {
-  background-color: rgb(43, 43, 43);
+  /* background-color: rgb(43, 43, 43); */
+  /* background-color: rgb(48, 119, 251); */
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 0.1rem 0.1rem 0.5rem rgba(256, 256, 256, 0.15);
+  /* box-shadow: 0.1rem 0.1rem 0.5rem rgba(256, 256, 256, 0.15); */
+  box-shadow: 0.1rem 0.1rem 0.7rem rgba(48, 119, 251, 0.25);
   gap: 1rem;
   row-gap: 0.5rem;
   overflow: hidden;
@@ -16,7 +19,7 @@
 }
 
 .post-container:hover {
-  box-shadow: 0.1rem 0.1rem 1.7rem rgba(256, 256, 256, 0.5);
+  box-shadow: 0.1rem 0.1rem 1.7rem rgba(48, 119, 251, 0.7);
 }
 
 .content-container {

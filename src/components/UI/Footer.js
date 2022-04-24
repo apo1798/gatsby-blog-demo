@@ -29,7 +29,6 @@ const Footer = () => {
             title="instagram"
           >
             <InstagramLogo size={32} />
-            {/* <span>Instagram</span> */}
           </a>
         </nav>
       </div>
