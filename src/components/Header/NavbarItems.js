@@ -9,9 +9,12 @@ const NavbarItems = props => {
     props.closeMenu()
   }
 
-  const path = window.location.pathname
-  const linkPathActive = currentPath => {
-    return path === currentPath ? `${navLink} ${active}` : `${navLink}`
+  const linkPathActive = linkPath => {
+    if (typeof window === "undefined") return
+
+    return window.location.pathname === linkPath
+      ? `${navLink} ${active}`
+      : `${navLink}`
   }
 
   return (
