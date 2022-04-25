@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `DC的生活日誌`,
-    titleTemplate: "%s | DC的生活日誌",
-    description: `這裡分享個人成長、投資開戶、讀書心得、生活優惠的介紹。`,
-    author: `chenliam0`,
-    siteUrl: `https://chenliamblog.netlify.app/`,
-    keywords: `投資理財、個人成長、讀書心得`,
+    title: `APO的部落格`,
+    titleTemplate: "%s | APO的部落格",
+    description: `這裡分享小弟我的生活日常、個人成長、讀書心得。`,
+    author: `apo1798`,
+    siteUrl: `https://apo1798blog.netlify.app/`,
+    keywords: `生活日常、個人成長、讀書心得`,
     image: `/dog.jpg`,
     lang: `zh-TW`,
   },
@@ -54,27 +54,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `DC 的生活日誌`,
-        short_name: `Danny's Blog`,
+        name: `APO 的生活日誌`,
+        short_name: `APO's Blog`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#333`,
         display: `standalone`,
         icon: `src/images/icon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-8232J2DSHN", // Google Analytics / GA
-        ],
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
-        },
       },
     },
   ],

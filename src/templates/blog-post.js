@@ -86,7 +86,10 @@ export const query = graphql`
       }
       body
     }
-    allMdx(filter: { frontmatter: { tag: { eq: $tag } }, id: { ne: $id } }) {
+    allMdx(
+      filter: { frontmatter: { tag: { eq: $tag } }, id: { ne: $id } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         slug
         frontmatter {

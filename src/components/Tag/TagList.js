@@ -5,7 +5,6 @@ import { Tag } from "phosphor-react"
 import { tagContainer } from "./TagList.module.css"
 
 const TagList = ({ tagArray, nodes }) => {
-  console.log(nodes)
   return (
     <section>
       <ul className={tagContainer}>

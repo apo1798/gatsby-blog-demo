@@ -15,7 +15,6 @@ const BlogCard = ({ node }) => {
   useEffect(() => {
     const obeserver = new IntersectionObserver(entries => {
       const entry = entries[0]
-      console.log("entry", entry.isIntersecting)
 
       if (entry.isIntersecting === true) {
         obeserver.unobserve(postRef.current)
