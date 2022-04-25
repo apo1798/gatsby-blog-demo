@@ -24,7 +24,7 @@ const BlogList = props => {
       <h3 className={subTitle}>{`標籤 ${tag} 共有${tagTotalPosts}篇`}</h3>
       <div className={postListContainer}>
         {data.allMdx.nodes.map(node => {
-          return <BlogCard node={node} />
+          return <BlogCard node={node} key={node.id} />
         })}
       </div>
 

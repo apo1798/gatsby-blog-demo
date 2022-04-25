@@ -8,7 +8,6 @@ import { postContainer, hideContainer, contentContainer, postImage,postText, ali
 import { Notebook } from "phosphor-react"
 
 const BlogCard = ({ node }) => {
-  // if (!node) return null;
   const [elementIsViviable, setElemenIsVisible] = useState(false)
   const postRef = useRef()
   const image = getImage(node.frontmatter.hero_image?.childImageSharp)
@@ -28,7 +27,6 @@ const BlogCard = ({ node }) => {
 
   return (
     <article
-      key={node.id}
       className={`${postContainer} ${!elementIsViviable && hideContainer}`}
       ref={postRef}
     >
@@ -44,6 +42,7 @@ const BlogCard = ({ node }) => {
         <div className={postText}>
           <h2>{node.frontmatter.title}</h2>
           <BlogCardDes
+            node={node}
             date={node.frontmatter.date}
             tagArray={node.frontmatter.tag}
           />

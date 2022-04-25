@@ -1,20 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
+import { useLocation } from "@reach/router"
 import { navLinks, navLink, active } from "./NavbarItems.module.css"
 import { LinkedinLogo } from "phosphor-react"
 
 const NavbarItems = props => {
+  const { pathname } = useLocation()
   const mobileMenuClosed = () => {
     if (!props.isMobile) return
     props.closeMenu()
   }
 
   const linkPathActive = linkPath => {
-    if (typeof window === "undefined") return
-
-    return window.location.pathname === linkPath
-      ? `${navLink} ${active}`
-      : `${navLink}`
+    return pathname === linkPath ? `${navLink} ${active}` : `${navLink}`
   }
 
   return (

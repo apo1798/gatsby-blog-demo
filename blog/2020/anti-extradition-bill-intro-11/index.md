@@ -1,7 +1,7 @@
 ---
 title: 動態抗爭的另一面--香港反送中文宣討論
-date: "2012-04-17"
-tag: ["回顧", "日常"]
+date: "2020-04-17"
+tag: ["回顧", "讀書心得"]
 hero_image: "./hero.jpg"
 hero_image_alt: "隧道裡的海報"
 hero_image_credit_text: "網路圖片"

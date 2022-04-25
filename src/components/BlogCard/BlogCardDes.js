@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { alignCenter } from "./BlogCardDes.module.css"
 import { Calendar, Tag } from "phosphor-react"
 
-const BlogCardDes = ({ date, tagArray }) => {
+const BlogCardDes = ({ date, tagArray, node }) => {
   return (
     <p className={alignCenter}>
       <span className={alignCenter}>
@@ -13,8 +13,8 @@ const BlogCardDes = ({ date, tagArray }) => {
       <span className={alignCenter}>
         <Tag size={25} />
         {tagArray.length === 1 && tagArray[0] === "" && <span>「無分類」</span>}
-        {tagArray.map(tag => (
-          <Link to={`/tag/${tag}`} key={tag}>
+        {tagArray.map((tag, i) => (
+          <Link to={`/tag/${tag}`} key={tag + i}>
             {tag}
           </Link>
         ))}

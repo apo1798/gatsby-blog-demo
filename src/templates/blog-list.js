@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 
 import { postListContainer } from "./blog-list.module.css"
@@ -30,7 +30,7 @@ const BlogList = props => {
           prev={{ content: "上一頁", link: prevPage }}
           next={{ content: "下一頁", link: nextPage }}
         />
-      </Layout>{" "}
+      </Layout>
     </>
   )
 }
