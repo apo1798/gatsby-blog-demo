@@ -12,36 +12,55 @@
 .markdown-wrapper h1 {
   font-size: 2.4rem;
   margin: 1.6rem 0;
+
+  color: var(--md-h1-color);
 }
 
 .markdown-wrapper h2 {
   font-size: 2.2rem;
   margin: 1.4rem 0;
+
+  color: var(--md-h2-color);
 }
 
 .markdown-wrapper h3 {
   font-size: 2rem;
   margin: 1.4rem 0;
+
+  color: var(--md-h3-color);
 }
 
 .markdown-wrapper h4 {
   font-size: 1.8rem;
+
+  color: var(--md-h4-color);
 }
 
 .markdown-wrapper h5 {
   font-size: 1.6rem;
+  color: var(--md-h4-color);
 }
 
 .markdown-wrapper h6 {
   font-size: 1.3rem;
+  color: var(--md-h4-color);
 }
 
 .markdown-wrapper p {
   margin-bottom: 1.2rem;
 }
 
-.markdown-wrapper a {
+.markdown-wrapper a:visited,
+.markdown-wrapper a:link {
   text-decoration: underline;
+  color: var(--md-link-color);
+
+  transition: all 0.3s;
+}
+
+.markdown-wrapper a:hover,
+.markdown-wrapper a:active {
+  color: var(--md-link-hover-color);
 }
 
 .markdown-wrapper ul,

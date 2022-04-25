@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useLocation } from "@reach/router"
 import { navLinks, navLink, active } from "./NavbarItems.module.css"
-import { LinkedinLogo } from "phosphor-react"
+import { GithubLogo } from "phosphor-react"
 
 const NavbarItems = props => {
   const { pathname } = useLocation()
@@ -37,19 +37,18 @@ const NavbarItems = props => {
           onClick={mobileMenuClosed}
           className={linkPathActive("/about")}
         >
-          關於我
+          關於本站
         </Link>
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/danny-hong-liang-chen/
-"
+          href="https://github.com/apo1798/gatsby-blog-demo"
           title="linkedin"
           rel="noopener noreferrer"
           target="_blank"
           onClick={mobileMenuClosed}
         >
-          <LinkedinLogo size={32} />
+          <GithubLogo size={32} />
         </a>
       </li>
     </ul>

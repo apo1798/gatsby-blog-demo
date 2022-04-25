@@ -10,7 +10,7 @@ const AboutPage = ({ data, ...props }) => {
   console.log(props)
 
   return (
-    <Layout pageTitle="關於我">
+    <Layout pageTitle="關於本站">
       <MarkdownWrapper>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </MarkdownWrapper>

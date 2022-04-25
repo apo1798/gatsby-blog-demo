@@ -25,8 +25,8 @@ const HeaderHero = () => {
         alt={data.allFile.nodes[0].name}
       />
       <div className={heroText}>
-        <h1>DC的生活日誌</h1>
-        <h2>投資理財、個人成長、讀書心得</h2>
+        <h1>APO的部落格</h1>
+        <h2>生活分享、個人成長、讀書心得</h2>
       </div>
     </section>
   )

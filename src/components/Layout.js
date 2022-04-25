@@ -8,7 +8,7 @@ import {
   heading,
 } from "./Layout.module.css"
 import "./global.css"
-import Footer from "./UI/Footer"
+import Footer from "./Footer/Footer"
 import Header from "./Header/Header"
 
 const Layout = ({ pageTitle, children, headerHero = false }) => {
