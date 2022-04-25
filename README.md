@@ -24,13 +24,13 @@
 
 ### 技術介紹
 
-本站為 SPA 單頁式網頁。利用 Gatsby 插件，實現圖片 lazy loading、Markdown 轉換 html 。透過 gatsby-config.js 進行設定，gatsby-source-filesystem 搜尋在 blog 裡面的資料夾、資料夾中的檔案，裡面的 siteMetadata 是網站的基本資訊（如網站標題、描述、og 圖片）。  
-![檔案架構](https://raw.githubusercontent.com/apo1798/simple-gatsby-blog-initial/main/site/structure.png "檔案架構")  
-檔案架構
+本站為 SPA 單頁式網頁。利用 Gatsby 插件，實現圖片 lazy loading、Markdown 轉換 html 。透過 gatsby-config.js 進行設定，gatsby-source-filesystem 搜尋在 blog 裡面的資料夾、資料夾中的檔案，裡面的 siteMetadata 是網站的基本資訊（如網站標題、描述、og 圖片）。
+
+![檔案架構](https://raw.githubusercontent.com/apo1798/gatsby-blog-demo/main/site/structure.png "檔案架構")
 
 另外在 gatsby-node.js 處理文章標籤與頁數的網址生成。透過 graphql 抓取資料，createPage API 依照資料夾的名稱生成文章網址。同時將時間排序的上下篇資料傳入至文章中，在底部便能導覽至其他文章，亦可自己設定一頁將有幾篇文章。
 
-![依照tag標籤與數量生成對應網址](https://raw.githubusercontent.com/apo1798/simple-gatsby-blog-initial/main/site/gatsby_node_logic.png "依照tag標籤與數量生成對應網址")
+![依照tag標籤與數量生成對應網址](https://raw.githubusercontent.com/apo1798/gatsby-blog-demo/main/site/gatsby_node_logic.png "依照tag標籤與數量生成對應網址")
 
 另外 components 檔案中的 Seo.js 負責 html head 中的 title, og 等相關資料處理。
 
@@ -49,13 +49,13 @@ frontmatter 書寫範例
   hero_image:  "./egg.jpg"
   hero_image_alt: "醃製鹹蛋黃活動體驗"
   hero_image_credit_text: "Apo1798"
-  hero_image_credit_link: "https://github.com/apo1798/simple-gatsby-blog-initial"
+  hero_image_credit_link: "https://github.com/apo1798/gatsby-blog-demo"
 ---
 ```
 
 若特定的 frontmatter 未附上，都已做了簡單的錯誤處理，生成文章將如下。日期錯誤文章將排序在最後。
 
-![欠缺資料所生成的文章](https://raw.githubusercontent.com/apo1798/simple-gatsby-blog-initial/main/site/wrong_md_output.png "欠缺資料所生成的文章")
+![欠缺資料所生成的文章](https://raw.githubusercontent.com/apo1798/gatsby-blog-demo/main/site/wrong_md_output.png "欠缺資料所生成的文章")
 
 3. 撰寫內容，並將相關檔案（如圖片）加至資料夾內。
 4. npm start，開啟 Gatsby 開發環境、預覽文章。
